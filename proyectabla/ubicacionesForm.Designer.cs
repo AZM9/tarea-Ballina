@@ -1,6 +1,6 @@
 ﻿namespace proyectabla
 {
-    partial class categoriasForm2
+    partial class ubicacionesForm
     {
         /// <summary>
         /// Required designer variable.
@@ -29,14 +29,15 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(categoriasForm2));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ubicacionesForm));
             System.Windows.Forms.Label idLabel;
             System.Windows.Forms.Label nombreLabel;
+            System.Windows.Forms.Label descripcionLabel;
             this.postgresDataSet = new proyectabla.postgresDataSet();
-            this.categoriasBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.categoriasTableAdapter = new proyectabla.postgresDataSetTableAdapters.categoriasTableAdapter();
+            this.ubicacionesBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.ubicacionesTableAdapter = new proyectabla.postgresDataSetTableAdapters.ubicacionesTableAdapter();
             this.tableAdapterManager = new proyectabla.postgresDataSetTableAdapters.TableAdapterManager();
-            this.categoriasBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
+            this.ubicacionesBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
@@ -48,15 +49,17 @@
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
-            this.categoriasBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
+            this.ubicacionesBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
             this.idTextBox = new System.Windows.Forms.TextBox();
             this.nombreTextBox = new System.Windows.Forms.TextBox();
+            this.descripcionTextBox = new System.Windows.Forms.TextBox();
             idLabel = new System.Windows.Forms.Label();
             nombreLabel = new System.Windows.Forms.Label();
+            descripcionLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.postgresDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.categoriasBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.categoriasBindingNavigator)).BeginInit();
-            this.categoriasBindingNavigator.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ubicacionesBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ubicacionesBindingNavigator)).BeginInit();
+            this.ubicacionesBindingNavigator.SuspendLayout();
             this.SuspendLayout();
             // 
             // postgresDataSet
@@ -64,32 +67,32 @@
             this.postgresDataSet.DataSetName = "postgresDataSet";
             this.postgresDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // categoriasBindingSource
+            // ubicacionesBindingSource
             // 
-            this.categoriasBindingSource.DataMember = "categorias";
-            this.categoriasBindingSource.DataSource = this.postgresDataSet;
+            this.ubicacionesBindingSource.DataMember = "ubicaciones";
+            this.ubicacionesBindingSource.DataSource = this.postgresDataSet;
             // 
-            // categoriasTableAdapter
+            // ubicacionesTableAdapter
             // 
-            this.categoriasTableAdapter.ClearBeforeFill = true;
+            this.ubicacionesTableAdapter.ClearBeforeFill = true;
             // 
             // tableAdapterManager
             // 
             this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
-            this.tableAdapterManager.categoriasTableAdapter = this.categoriasTableAdapter;
+            this.tableAdapterManager.categoriasTableAdapter = null;
             this.tableAdapterManager.entradasTableAdapter = null;
             this.tableAdapterManager.inventariosTableAdapter = null;
             this.tableAdapterManager.productosTableAdapter = null;
-            this.tableAdapterManager.ubicacionesTableAdapter = null;
+            this.tableAdapterManager.ubicacionesTableAdapter = this.ubicacionesTableAdapter;
             this.tableAdapterManager.UpdateOrder = proyectabla.postgresDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
-            // categoriasBindingNavigator
+            // ubicacionesBindingNavigator
             // 
-            this.categoriasBindingNavigator.AddNewItem = this.bindingNavigatorAddNewItem;
-            this.categoriasBindingNavigator.BindingSource = this.categoriasBindingSource;
-            this.categoriasBindingNavigator.CountItem = this.bindingNavigatorCountItem;
-            this.categoriasBindingNavigator.DeleteItem = this.bindingNavigatorDeleteItem;
-            this.categoriasBindingNavigator.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ubicacionesBindingNavigator.AddNewItem = this.bindingNavigatorAddNewItem;
+            this.ubicacionesBindingNavigator.BindingSource = this.ubicacionesBindingSource;
+            this.ubicacionesBindingNavigator.CountItem = this.bindingNavigatorCountItem;
+            this.ubicacionesBindingNavigator.DeleteItem = this.bindingNavigatorDeleteItem;
+            this.ubicacionesBindingNavigator.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.bindingNavigatorMoveFirstItem,
             this.bindingNavigatorMovePreviousItem,
             this.bindingNavigatorSeparator,
@@ -101,17 +104,17 @@
             this.bindingNavigatorSeparator2,
             this.bindingNavigatorAddNewItem,
             this.bindingNavigatorDeleteItem,
-            this.categoriasBindingNavigatorSaveItem});
-            this.categoriasBindingNavigator.Location = new System.Drawing.Point(0, 0);
-            this.categoriasBindingNavigator.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
-            this.categoriasBindingNavigator.MoveLastItem = this.bindingNavigatorMoveLastItem;
-            this.categoriasBindingNavigator.MoveNextItem = this.bindingNavigatorMoveNextItem;
-            this.categoriasBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
-            this.categoriasBindingNavigator.Name = "categoriasBindingNavigator";
-            this.categoriasBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.categoriasBindingNavigator.Size = new System.Drawing.Size(326, 25);
-            this.categoriasBindingNavigator.TabIndex = 0;
-            this.categoriasBindingNavigator.Text = "bindingNavigator1";
+            this.ubicacionesBindingNavigatorSaveItem});
+            this.ubicacionesBindingNavigator.Location = new System.Drawing.Point(0, 0);
+            this.ubicacionesBindingNavigator.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
+            this.ubicacionesBindingNavigator.MoveLastItem = this.bindingNavigatorMoveLastItem;
+            this.ubicacionesBindingNavigator.MoveNextItem = this.bindingNavigatorMoveNextItem;
+            this.ubicacionesBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
+            this.ubicacionesBindingNavigator.Name = "ubicacionesBindingNavigator";
+            this.ubicacionesBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
+            this.ubicacionesBindingNavigator.Size = new System.Drawing.Size(347, 25);
+            this.ubicacionesBindingNavigator.TabIndex = 0;
+            this.ubicacionesBindingNavigator.Text = "bindingNavigator1";
             // 
             // bindingNavigatorMoveFirstItem
             // 
@@ -148,14 +151,14 @@
             // bindingNavigatorCountItem
             // 
             this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(37, 22);
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(37, 15);
             this.bindingNavigatorCountItem.Text = "de {0}";
             this.bindingNavigatorCountItem.ToolTipText = "Número total de elementos";
             // 
             // bindingNavigatorSeparator1
             // 
             this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 25);
+            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 6);
             // 
             // bindingNavigatorMoveNextItem
             // 
@@ -163,7 +166,7 @@
             this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
             this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
             this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(23, 20);
             this.bindingNavigatorMoveNextItem.Text = "Mover siguiente";
             // 
             // bindingNavigatorMoveLastItem
@@ -172,13 +175,13 @@
             this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
             this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
             this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(23, 20);
             this.bindingNavigatorMoveLastItem.Text = "Mover último";
             // 
             // bindingNavigatorSeparator2
             // 
             this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 25);
+            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 6);
             // 
             // bindingNavigatorAddNewItem
             // 
@@ -195,22 +198,22 @@
             this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
             this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
             this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 20);
             this.bindingNavigatorDeleteItem.Text = "Eliminar";
             // 
-            // categoriasBindingNavigatorSaveItem
+            // ubicacionesBindingNavigatorSaveItem
             // 
-            this.categoriasBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.categoriasBindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("categoriasBindingNavigatorSaveItem.Image")));
-            this.categoriasBindingNavigatorSaveItem.Name = "categoriasBindingNavigatorSaveItem";
-            this.categoriasBindingNavigatorSaveItem.Size = new System.Drawing.Size(23, 22);
-            this.categoriasBindingNavigatorSaveItem.Text = "Guardar datos";
-            this.categoriasBindingNavigatorSaveItem.Click += new System.EventHandler(this.categoriasBindingNavigatorSaveItem_Click);
+            this.ubicacionesBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.ubicacionesBindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("ubicacionesBindingNavigatorSaveItem.Image")));
+            this.ubicacionesBindingNavigatorSaveItem.Name = "ubicacionesBindingNavigatorSaveItem";
+            this.ubicacionesBindingNavigatorSaveItem.Size = new System.Drawing.Size(23, 23);
+            this.ubicacionesBindingNavigatorSaveItem.Text = "Guardar datos";
+            this.ubicacionesBindingNavigatorSaveItem.Click += new System.EventHandler(this.ubicacionesBindingNavigatorSaveItem_Click);
             // 
             // idLabel
             // 
             idLabel.AutoSize = true;
-            idLabel.Location = new System.Drawing.Point(127, 84);
+            idLabel.Location = new System.Drawing.Point(157, 88);
             idLabel.Name = "idLabel";
             idLabel.Size = new System.Drawing.Size(18, 13);
             idLabel.TabIndex = 1;
@@ -218,8 +221,8 @@
             // 
             // idTextBox
             // 
-            this.idTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.categoriasBindingSource, "id", true));
-            this.idTextBox.Location = new System.Drawing.Point(178, 81);
+            this.idTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.ubicacionesBindingSource, "id", true));
+            this.idTextBox.Location = new System.Drawing.Point(227, 85);
             this.idTextBox.Name = "idTextBox";
             this.idTextBox.Size = new System.Drawing.Size(100, 20);
             this.idTextBox.TabIndex = 2;
@@ -227,7 +230,7 @@
             // nombreLabel
             // 
             nombreLabel.AutoSize = true;
-            nombreLabel.Location = new System.Drawing.Point(127, 110);
+            nombreLabel.Location = new System.Drawing.Point(157, 114);
             nombreLabel.Name = "nombreLabel";
             nombreLabel.Size = new System.Drawing.Size(45, 13);
             nombreLabel.TabIndex = 3;
@@ -235,30 +238,49 @@
             // 
             // nombreTextBox
             // 
-            this.nombreTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.categoriasBindingSource, "nombre", true));
-            this.nombreTextBox.Location = new System.Drawing.Point(178, 107);
+            this.nombreTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.ubicacionesBindingSource, "nombre", true));
+            this.nombreTextBox.Location = new System.Drawing.Point(227, 111);
             this.nombreTextBox.Name = "nombreTextBox";
             this.nombreTextBox.Size = new System.Drawing.Size(100, 20);
             this.nombreTextBox.TabIndex = 4;
             // 
-            // categoriasForm2
+            // descripcionLabel
+            // 
+            descripcionLabel.AutoSize = true;
+            descripcionLabel.Location = new System.Drawing.Point(157, 140);
+            descripcionLabel.Name = "descripcionLabel";
+            descripcionLabel.Size = new System.Drawing.Size(64, 13);
+            descripcionLabel.TabIndex = 5;
+            descripcionLabel.Text = "descripcion:";
+            // 
+            // descripcionTextBox
+            // 
+            this.descripcionTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.ubicacionesBindingSource, "descripcion", true));
+            this.descripcionTextBox.Location = new System.Drawing.Point(227, 137);
+            this.descripcionTextBox.Name = "descripcionTextBox";
+            this.descripcionTextBox.Size = new System.Drawing.Size(100, 20);
+            this.descripcionTextBox.TabIndex = 6;
+            // 
+            // ubicacionesForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(326, 261);
+            this.ClientSize = new System.Drawing.Size(347, 261);
             this.Controls.Add(idLabel);
             this.Controls.Add(this.idTextBox);
             this.Controls.Add(nombreLabel);
             this.Controls.Add(this.nombreTextBox);
-            this.Controls.Add(this.categoriasBindingNavigator);
-            this.Name = "categoriasForm2";
-            this.Text = "categoriasForm2";
-            this.Load += new System.EventHandler(this.categoriasForm2_Load);
+            this.Controls.Add(descripcionLabel);
+            this.Controls.Add(this.descripcionTextBox);
+            this.Controls.Add(this.ubicacionesBindingNavigator);
+            this.Name = "ubicacionesForm";
+            this.Text = "ubicacionesForm";
+            this.Load += new System.EventHandler(this.ubicacionesForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.postgresDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.categoriasBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.categoriasBindingNavigator)).EndInit();
-            this.categoriasBindingNavigator.ResumeLayout(false);
-            this.categoriasBindingNavigator.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ubicacionesBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ubicacionesBindingNavigator)).EndInit();
+            this.ubicacionesBindingNavigator.ResumeLayout(false);
+            this.ubicacionesBindingNavigator.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -267,10 +289,10 @@
         #endregion
 
         private postgresDataSet postgresDataSet;
-        private System.Windows.Forms.BindingSource categoriasBindingSource;
-        private postgresDataSetTableAdapters.categoriasTableAdapter categoriasTableAdapter;
+        private System.Windows.Forms.BindingSource ubicacionesBindingSource;
+        private postgresDataSetTableAdapters.ubicacionesTableAdapter ubicacionesTableAdapter;
         private postgresDataSetTableAdapters.TableAdapterManager tableAdapterManager;
-        private System.Windows.Forms.BindingNavigator categoriasBindingNavigator;
+        private System.Windows.Forms.BindingNavigator ubicacionesBindingNavigator;
         private System.Windows.Forms.ToolStripButton bindingNavigatorAddNewItem;
         private System.Windows.Forms.ToolStripLabel bindingNavigatorCountItem;
         private System.Windows.Forms.ToolStripButton bindingNavigatorDeleteItem;
@@ -282,8 +304,9 @@
         private System.Windows.Forms.ToolStripButton bindingNavigatorMoveNextItem;
         private System.Windows.Forms.ToolStripButton bindingNavigatorMoveLastItem;
         private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
-        private System.Windows.Forms.ToolStripButton categoriasBindingNavigatorSaveItem;
+        private System.Windows.Forms.ToolStripButton ubicacionesBindingNavigatorSaveItem;
         private System.Windows.Forms.TextBox idTextBox;
         private System.Windows.Forms.TextBox nombreTextBox;
+        private System.Windows.Forms.TextBox descripcionTextBox;
     }
 }

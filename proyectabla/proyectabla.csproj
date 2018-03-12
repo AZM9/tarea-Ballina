@@ -70,6 +70,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ubicacionesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ubicacionesForm.Designer.cs">
+      <DependentUpon>ubicacionesForm.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="categoriasForm2.resx">
       <DependentUpon>categoriasForm2.cs</DependentUpon>
     </EmbeddedResource>
@@ -82,6 +88,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="ubicacionesForm.resx">
+      <DependentUpon>ubicacionesForm.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="postgresDataSet.xsc">
       <DependentUpon>postgresDataSet.xsd</DependentUpon>
